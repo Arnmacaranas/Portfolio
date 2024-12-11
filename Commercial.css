@@ -1,0 +1,124 @@
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Light background for minimal look */
+}
+
+
+
+
+/* NAV Section */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #5f5e4a; /* Set a solid background color (white in this case) */
+    color: #ffffff;
+    padding: 1rem;
+    z-index: 1000;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.logo-container {
+    margin-left: 1rem; /* Space between logo and link */
+    padding-left: 30px; /* Add padding to the right of the logo */
+}
+
+nav .logo {
+    height: 50px; /* Set a height for the logo */
+    width: auto; /* Maintain aspect ratio */
+}
+
+nav a {
+    color: #ffffff; /* Black text for contrast */
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 20px; /* Space between links */
+}
+
+
+
+
+/* Portraits Section */
+#portraits {
+    padding: 5rem 2rem; /* More padding for a spacious feel */
+    text-align: center;
+    margin-top: 80px; /* Add space between nav and portraits section */
+}
+
+.portraits-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Set to 4 columns */
+    gap: 30px; /* Space between portraits */
+    padding: 70px; /* Add left and right padding */
+}
+
+.portrait {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    overflow: hidden;
+    border-radius: 5px; /* Rounded corners for a softer look */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.portrait img {
+    display: block; /* Make the image a block element */
+    margin: 50px auto 0; /* Add 20px space above the image and center it */
+    width: 100%; /* Make images take the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+
+#portraits h3 {
+    font-weight: 500; /* Lighter font weight for a minimal look */
+    color: #333; /* Dark text for readability */
+    margin-bottom: 2rem; /* Space below the heading */
+    font-size: 4rem; /* Increase font size (adjust as needed) */
+}
+
+#portraits p {
+    font-size: 1rem; /* Adjust the size as needed */
+    line-height: 1.8; /* Optional: Adjust line height for better readability */
+    margin-bottom: 1rem; /* Optional: Add space below the paragraph */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .portraits-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .portraits-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .portraits-container {
+        grid-template-columns: 1fr; /* 1 column for very small screens */
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #5f5e4a;
+    color: #fff; /* White text for contrast */
+    padding: 1rem;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+}

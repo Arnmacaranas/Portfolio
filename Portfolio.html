@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Macaranas - Portfolio</title>
+    <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="stylesheet" href="Project Section.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="hero">
+        <section id="Home">
+        <nav>
+            <img src="Arn Logo White.png" alt="Logo" class="logo"> <!-- Add your logo here -->
+            <div class="nav-links">
+            <a href="#Home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact-social">Contact</a>
+        </div>
+        </section>
+        </nav>
+
+
+        <script>
+            let lastScrollTop = 0; // Keep track of the last scroll position
+            const nav = document.querySelector('nav'); // Select the navigation element
+        
+            window.addEventListener('scroll', function() {
+                const currentScroll = window.pageYOffset || document.documentElement.scrollTop; // Get current scroll position
+        
+                if (currentScroll > lastScrollTop) {
+                    // Scrolling down
+                    nav.classList.add('hidden'); // Add hidden class to fade out
+                } else {
+                    // Scrolling up
+                    nav.classList.remove('hidden'); // Remove hidden class to fade in
+                }
+                lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Update last scroll position
+            });
+        </script>
+            
+        </nav>
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="cover.jpg" alt="Header Image 1">
+            </div>
+            <div class="mySlides fade">
+                <img src="IMG_8543.jpg" alt="Header Image 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="Facebook cover.jpg" alt="Header Image 3">
+            </div>
+            <div class="mySlides fade">
+                <img src="Cover 1.jpg" alt="Header Image 4">
+            </div>
+            
+    
+            
+        </div>
+
+        <div class="header-name">
+            <h3>Aaron Macaranas</h3>
+            <h4>Photographer | Cinematographer</h4>
+        </div>
+
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>Hello! I'm <strong>Aaron Macaranas</strong>, a photographer & cinematographer with a deep passion for capturing moments that tell compelling stories. Whether it’s through a motion picture or a still frame, I’m driven by the power of visuals to evoke emotion, inspire thought, and connect people.</p>
+                <p>As a cinematographer, I specialize in crafting dynamic visual narratives for feature films, short films, commercials, and music videos. From lighting and composition to camera movement, I bring a cinematic approach to every project, collaborating with directors and production teams to create a distinct visual language that enhances the story.</p>
+                <p>As a photographer, photography is more than just capturing moments—it’s about preserving emotions, connections, and the beauty of the world around us. I strive to bring scripts to life by capturing moments that resonate with emotion, authenticity, and beauty. I specialize in portrait, wedding, and street photography, ensuring every photo is unique and meaningful.</p>
+                <p>My dual expertise in cinematography and photography gives me a unique perspective on storytelling, blending the art of stillness with the energy of motion. Whether working on a large-scale production or a personal project, I’m committed to delivering visuals that resonate deeply and leave a lasting impact.</p>
+                <p>Let’s create something extraordinary together!</p>
+            </div>
+            <div class="about-image">
+                <img src="IMG_3492.jpg" alt="About Me Image">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="video-section">
+        <h2>Featured Video</h2>
+        <div class="video-container">
+            <video class="featured-video" src="Featured Video.mp4" frameborder="0" allowfullscreen autoplay muted loop></video>
+            
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1>My Projects</h1>
+        <div class="projects-container">
+            <div class="projects-description">
+                <p>Here are some of my recent projects. Click on the images to see more!</p>
+            </div>
+            <div class="projects">
+                <div class="project">
+                    <h3>Portraits</h3>
+                    <img src="IMG_6388.jpg" alt="Description of Project 1" class="project-image">
+                    <a href="Portrait.html" class="see-more">See More</a> <!-- Link to Portraits page -->
+                </div>
+                <div class="project">
+                    <h3>Product</h3>
+                    <img src="Product 1.jpg" alt="Description of Project 2" class="project-image">
+                    <a href="Product.html" class="see-more">See More</a> <!-- Link to Product page -->
+                </div>
+                <div class="project">
+                    <h3>Street Photography</h3>
+                    <img src="Manila-Ongpin.jpg" alt="Description of Project 3" class="project-image">
+                    <a href="Street Photography.html" class="see-more">See More</a> <!-- Link to Street Photography page -->
+                </div>
+                <div class="project">
+                    <h3>Prenup</h3>
+                    <img src="Prenup.jpg" alt="Description of Project 4" class="project-image">
+                    <a href="prenup.html" class="see-more">See More</a> <!-- Link to Prenup page -->
+                </div>
+                <div class="project">
+                    <h3>Landscape</h3>
+                    <img src="Landscape.jpg" alt="Description of Project 5" class="project-image">
+                    <a href="landscape.html" class="see-more">See More</a> <!-- Link to Landscape page -->
+                </div>
+                <div class="project">
+                    <h3>Commercial</h3>
+                    <img src="Motorcycle.png" alt="Description of Project 6" class="project-image">
+                    <a href="commercial.html" class="see-more">See More</a> <!-- Link to Commercial page -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact-social">
+        <h2>Contact Me</h2>
+        <p>Email: macaranasaaronal@gmail.com</p>
+        <p>Phone: 09271764612</p>
+        
+        <h3>Follow me on social media:</h3>
+        <div class="social-media">
+            <a href="https://www.facebook.com/arnmacaranas" target="_blank" class="social-link">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/arnmacaranas/" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </section>
+           
+    
+
+    <footer>
+            </p>&copy; 2024 Aaron Macaranas. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+       let slideIndex = 0;
+let slideInterval;
+
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex - 1].style.display = "block";  
+
+    // Set the interval to change slides every 3 seconds (3000 milliseconds)
+    slideInterval = setTimeout(showSlides, 3000);
+}
+
+function plusSlides(n) {
+    clearTimeout(slideInterval); // Clear the interval when user manually changes slides
+    slideIndex += n - 1; 
+    showSlides();
+}
+
+        
+        </script>
+</body>
+</html>
+
